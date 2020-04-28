@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700;900&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    transition: all ease-in-out 0.65s;
+}
+body{
+    text-align: center;
+}
+img{
+    width: 100%;
+    border-radius: 6px;
+}
+
+
+figure{
+    margin: 25px;
+    box-shadow:0 0 8px 0 rgba(0,0,0,1);
+    border-radius: 6px;
+    
+
+}
+.photo-collection{
+    background-color: white;
+}
+.container{
+    background-color: white;
+    padding-top: 10px;
+}
+h1{
+    background-color: white;
+    display: inline;
+    color: black;
+    font-family: 'Kalam';
+    font-size: 37px;
+    
+
+}
+hr{
+    width: 85px;
+    border: 1.5px solid black;
+    border-radius: 30px;
+    padding-bottom: 5px;
+    margin-top: 0px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    box-shadow:0 0 5px 0 rgba(0,0,0,1);
+    display:block;
+    
+}
+hr:hover{
+    width: 160px;
+}
+h1:hover hr{
+    width: 160px;
+}
+.photo{
+    position: relative;
+}
+figcaption{
+    position: absolute;
+    bottom: 0px;
+    left:0px;
+    right: 0px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 20px;
+    z-index: 1;
+    border-radius: 0px 0px 6px 6px;
+   
+}
+.button{
+    font-size: 15px;
+}
+
+@media(min-width:500px){
+    .photo-collection{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .photo{
+        flex: 1 1 40%;
+        overflow: hidden;
+    }
+    img:hover{
+        transform: scale(1.1);
+    }
+
+}
+
+@media(min-width:750px){
+    h1{
+        font-size: 45px;
+    }
+
+}
+
+
+@media(min-width:1000px){
+    .photo{
+        flex: 1 1 25%;
+    }
+
+}
+@media(min-width:1200px){
+    h1{
+        font-size: 50px;
+    }
+}
+@media(min-width:1400px){
+    .button{
+        font-size: 20px;
+    }
+
+}
+
+.four{
+    margin-top: 20px;
+    background-color:  rgb(39, 40, 41);
+    color: white;
+    padding-top: 15px;
+    padding-bottom: 0px;
+    
+}
+.four span{
+    font-family: 'Raleway';
+    font-size: 18px;
+
+}
+footer h3{
+    margin-bottom: 2px;
+    margin-top: 8px;
+    font-family: 'kalam';
+
+
+}
+footer h4{
+    font-size: 15px;
+    margin-bottom: 0px;
+    margin-top: 5px;
+    font-family: 'Raleway';
+    padding-bottom: 0px;
+}
+footer h4 a{
+    color: #d8a251;
+    text-decoration: none;
+    padding-bottom:10px;
+    display:inline-block;
+    
+}
